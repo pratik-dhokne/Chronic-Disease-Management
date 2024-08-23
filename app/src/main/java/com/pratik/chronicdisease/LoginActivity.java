@@ -33,7 +33,7 @@ import com.google.firebase.auth.FirebaseUser;
 
 public class LoginActivity extends AppCompatActivity {
 
-    TextView txtsignup;
+    TextView txtsignup,txtdoctorlogin;
     EditText editusername, editpassword;
     Button btnlogin;
     ProgressBar progressBar;
@@ -52,6 +52,8 @@ public class LoginActivity extends AppCompatActivity {
         progressBar = findViewById(R.id.progresslogin);
         btnlogin = findViewById(R.id.login_button);
         mAuth = FirebaseAuth.getInstance();
+        txtdoctorlogin = findViewById(R.id.doctor_link);
+
 
         btnlogin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -82,6 +84,14 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intent = new Intent(getApplicationContext(), SignupActivity.class);
                 startActivity(intent);
+            }
+        });
+
+        txtdoctorlogin.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(getApplicationContext(),DoctorLoginActivity.class);
+                startActivity(i);
             }
         });
 

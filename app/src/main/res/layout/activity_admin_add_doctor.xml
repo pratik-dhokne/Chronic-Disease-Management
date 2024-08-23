@@ -1,0 +1,54 @@
+<!-- activity_admin_add_doctor.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/main"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/etDoctorName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Doctor Name" />
+
+    <EditText
+        android:id="@+id/etDoctorAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Doctor Address" />
+
+    <EditText
+        android:id="@+id/etDoctorEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Doctor Email"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/etDoctorPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Doctor Password"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/etDoctorQualification"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Qualification" />
+
+    <EditText
+        android:id="@+id/etDoctorSpecialization"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Specialization in Diabetes" />
+
+    <Button
+        android:id="@+id/btnAddDoctor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add Doctor" />
+
+</LinearLayout>
