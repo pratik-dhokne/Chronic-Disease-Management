@@ -188,7 +188,7 @@ public class SignupActivity extends AppCompatActivity {
                             firebaseUser.updateProfile(profileChangeRequest);
 
                             // Enter user data into the firebase realtime database;
-                            ReadWriteUserDetails writeUserDetails = new ReadWriteUserDetails(firebaseUser.getUid(), textfullname, textdob, textGender, textcontact, textaadharno);
+                            com.pratik.covidvaccination.ReadWriteUserDetails writeUserDetails = new com.pratik.covidvaccination.ReadWriteUserDetails(firebaseUser.getUid(), textfullname, textdob, textGender, textcontact, textaadharno);
 
                             // Database Reference
                             DatabaseReference referenceProfile = FirebaseDatabase.getInstance().getReference("Registered User");
